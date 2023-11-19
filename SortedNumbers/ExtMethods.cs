@@ -15,10 +15,16 @@ namespace SortedNumbers
             return x;
         }
 
-        public static int CintPrint(this int x)                 // Extended Method to print any Integer to console and even calculate and print Numbers
-        {                                                       // Example: (15+56-17).CintPrint() ... outputs the calculation result in the console.
-            Console.WriteLine(x);
+        public static string CprintWrite(this string x) 
+        {
+            Console.Write(x);
             return x;
+        }
+
+        public static void CintPrint(this int x)                 // Extended Method to print any Integer to console and even calculate and print Numbers
+        {
+                                                                // Example: (15+56-17).CintPrint() ... outputs the calculation result in the console.
+            Console.Write(x);
         }
     }
 }
