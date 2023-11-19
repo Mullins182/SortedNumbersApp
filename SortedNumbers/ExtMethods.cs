@@ -9,13 +9,13 @@ namespace SortedNumbers
 {
     internal static class ExtMethods
     {
-        public static string Cprint(this string x)              // Extended Method to output strings in console
+        public static string Cprint(this string x)                   // Extended Method to output strings in console
         {
             Console.WriteLine(x);
             return x;
         }
 
-        public static string CprintWrite(this string x) 
+        public static string CprintWrite(this string x)             // Print in actual Line Ext. Method
         {
             Console.Write(x);
             return x;
