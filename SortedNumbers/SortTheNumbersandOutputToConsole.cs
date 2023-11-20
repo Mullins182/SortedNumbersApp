@@ -8,10 +8,12 @@ namespace SortedNumbers
 {
     internal class SortTheNumbersandOutputToConsole
     {
-        
+
         public List<int> unsortedNumbers = new List<int>()
-        { 12, 55, 944, 35, 751, 654, 1044, 977, 864, 85, 11, 5, 1, 357, 1111, 266, 523, 933, 764, 841, 513, 632, 27, 2733, 3, 24, 57, 31, 21, 88,
-          22, 720, 560, 666, 121, 5999, 517, 844, 852, 369
+        {   683,  888,  203,  744,  216,  449,  197,  41,  284,  548,  159,  845,  159,  949,  691,  981,  324,  563,  854,  468,  117,  465,  808,  413,  232,
+            645,  848,  646,  549,  765,  225,  437,  681,  2,  44,  362,  845,  895,  627,  43,  708,  883,  950,  268,  814,  747,  689,  568,  917,  234,  781,
+            780,  574,  759,  937,  95,  761,  934,  936,  523,  459,  55,  698,  551,  111,  649,  499,  879,  77,  446,  89,  117,  917,  926,  988,  435,  689,
+            797,  950,  885,  718,  706,  84,  771,  782,  380,  916,  484,  525,  135,  495,  265,  428,  389,  662,  411,  876,  604, 650, 915
         };
         public SortTheNumbersandOutputToConsole() { }
 
@@ -19,7 +21,7 @@ namespace SortedNumbers
         {
             Console.CursorVisible = false;
 
-            for(int n = 25; n > 0; n--)
+            for(int n = 85; n > 0; n--)
             {
                 Console.Clear();
                 Console.WriteLine();
@@ -61,7 +63,7 @@ namespace SortedNumbers
 
                 unsortedNumbers[unsortedNumbers.Count()-1].CintPrint();
 
-                Thread.Sleep(750);
+                Thread.Sleep(25);
             }
 
             return unsortedNumbers;            
