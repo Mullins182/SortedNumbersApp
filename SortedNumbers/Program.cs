@@ -18,18 +18,18 @@
 
                 Console.Clear();
 
-                OrderNumbers.unsortTheNumbers();
+                OrderNumbers.unsortList();
 
                 Thread.Sleep(15000);
                 Console.Clear();
 
-                OrderNumbers.sortedNumbers();
+                OrderNumbers.sortList();
                 "\n\n\n\t\t\t\t\t> ".CprintWrite();
-                OrderNumbers.unsortedNumbers2.Min().CintPrint();
+                OrderNumbers.sortedNumbers.Min().CintPrint();
                 " < ist der kleinste Wert in der Liste !".Cprint();
                 "\n\t\t\t\t\t\t\t   UND".Cprint();
                 "\n\t\t\t\t\t> ".CprintWrite();
-                OrderNumbers.unsortedNumbers2.Max().CintPrint();
+                OrderNumbers.sortedNumbers.Max().CintPrint();
                 " < ist der größte Wert in der Liste !".Cprint();
 
                 "\n\n\n\t\t\t\tSORTIEREN ABGESCHLOSSEN ! Beliebige Taste drücken zum beenden !".Cprint();

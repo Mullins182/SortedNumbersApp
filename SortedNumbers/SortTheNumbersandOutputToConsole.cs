@@ -15,7 +15,7 @@ namespace SortedNumbers
             797,  950,  885,  501,  706,  84,  771,  782,  380,  916,  484,  525,  135,  495,  265,  428,  389,  662,  411,  876,  604, 650, 915
         };
 
-        public List<int> unsortedNumbers2 = new List<int>()
+        public List<int> sortedNumbers = new List<int>()
         {   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40,
             41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78,
             79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100
@@ -23,7 +23,7 @@ namespace SortedNumbers
 
         public SortTheNumbersandOutputToConsole() { }
 
-        public List<int> sortedNumbers()
+        public List<int> sortList()
         {
             Console.CursorVisible = false;
 
@@ -33,41 +33,41 @@ namespace SortedNumbers
 
                 "\t\t\t\t      DIE LISTE 1 bis 100 WIRD JETZT WIEDER SORTIERT !".Cprint();
 
-                for (int i = 0; i < unsortedNumbers2.Count() - 1; i++)
+                for (int i = 0; i < sortedNumbers.Count() - 1; i++)
                 {
 
-                    int buffer = unsortedNumbers2[i];
+                    int buffer = sortedNumbers[i];
 
-                    if (buffer > unsortedNumbers2[i + 1])
+                    if (buffer > sortedNumbers[i + 1])
                     {
 
-                        unsortedNumbers2[i] = unsortedNumbers2[i + 1];
-                        unsortedNumbers2[i + 1] = buffer;
+                        sortedNumbers[i] = sortedNumbers[i + 1];
+                        sortedNumbers[i + 1] = buffer;
                     }
 
                     if (i % 10 == 0)
                     {
                         Console.WriteLine();
                         Console.Write("\t\t\t");
-                        unsortedNumbers2[i].CintPrint();
+                        sortedNumbers[i].CintPrint();
                         "\t".CprintWrite();
                     }
                     else
                     {
-                        unsortedNumbers2[i].CintPrint();
+                        sortedNumbers[i].CintPrint();
                         "\t".CprintWrite();
                     }
                 }
 
-                unsortedNumbers2[unsortedNumbers2.Count()-1].CintPrint();
+                sortedNumbers[sortedNumbers.Count()-1].CintPrint();
 
                 Thread.Sleep(500);
             }
 
-            return unsortedNumbers2;            
+            return sortedNumbers;            
         }
 
-        public List<int> unsortTheNumbers()
+        public List<int> unsortList()
         {
             var n = 0;
             var z = 0;
@@ -83,55 +83,34 @@ namespace SortedNumbers
                 "\t\t\t\t      LISTE 1 bis 100 WIRD DURCHEINANDER GEWIRBELT ^^".Cprint();
 
 
-                for (int j = 0; j < unsortedNumbers2.Count() - 1; j++)
+                for (int j = 0; j < sortedNumbers.Count() - 1; j++)
                 {
                     n       = generateRandoms.Next(0, 100);
-                    buffer  = unsortedNumbers2[n];
+                    buffer  = sortedNumbers[n];
                     z       = generateRandoms.Next(0, 100);
 
-                    unsortedNumbers2[n] = unsortedNumbers2[z];
-                    unsortedNumbers2[z] = buffer;
+                    sortedNumbers[n] = sortedNumbers[z];
+                    sortedNumbers[z] = buffer;
 
                     if (j % 10 == 0)
                     {
                         Console.WriteLine();
                         Console.Write("\t\t\t");
-                        unsortedNumbers2[j].CintPrint();
+                        sortedNumbers[j].CintPrint();
                         "\t".CprintWrite();
                     }
                     else
                     {
-                        unsortedNumbers2[j].CintPrint();
+                        sortedNumbers[j].CintPrint();
                         "\t".CprintWrite();
                     }                    
                 }
 
-                unsortedNumbers2[unsortedNumbers2.Count() - 1].CintPrint();
+                sortedNumbers[sortedNumbers.Count() - 1].CintPrint();
                 Thread.Sleep(500);
             }
 
-            //Console.Clear();
-
-            //int count = 1;
-
-            //Functions.NewLinesAndCLSoutput();
-
-            //foreach (var cache in unsortedNumbers2)
-            //{
-            //    if(count % 10 == 0)
-            //    {
-            //        cache.CintPrint();
-            //        "\t".CprintWrite();
-            //        count++;
-            //        Console.WriteLine();
-            //    }
-
-            //    cache.CintPrint();
-            //    "\t".CprintWrite();
-            //    count++;
-            //}
-            //count = 1;
-            return unsortedNumbers2;
+            return sortedNumbers;
         }
     }
 }
