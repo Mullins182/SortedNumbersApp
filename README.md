@@ -1,1 +1,3 @@
 # SortedNumbersApp
+
+Das Programm sortiert eine Liste von Zahlen nach größe, und zwar nach dem Bubble-Sort-Prinzip ...
