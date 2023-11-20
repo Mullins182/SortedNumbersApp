@@ -10,6 +10,8 @@
 
             do
             {
+                Console.CursorVisible = false;
+
                 "\n\n\n\n\n\n\n\n\n\t\tPROGRAMM STARTET GLEICH ...".Cprint();
 
                 Thread.Sleep(5000);
