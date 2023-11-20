@@ -9,22 +9,23 @@ namespace SortedNumbers
 {
     internal static class ExtMethods
     {
-        public static string Cprint(this string x)                   // Extended Method to output strings in console
+        public static void Cprint(this string x)                   // Extended Method to output strings in console
         {
             Console.WriteLine(x);
-            return x;
+            //return x;
         }
 
-        public static string CprintWrite(this string x)             // Print in actual Line Ext. Method
+        public static void CprintWrite(this string x)             // Print in actual Line Ext. Method
         {
             Console.Write(x);
-            return x;
+            //return x;
         }
 
         public static void CintPrint(this int x)                 // Extended Method to print any Integer to console and even calculate and print Numbers
         {
                                                                 // Example: (15+56-17).CintPrint() ... outputs the calculation result in the console.
             Console.Write(x);
+            //return x;
         }
     }
 }

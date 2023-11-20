@@ -61,7 +61,7 @@ namespace SortedNumbers
 
                 unsortedNumbers[unsortedNumbers.Count()-1].CintPrint();
 
-                Thread.Sleep(500);
+                Thread.Sleep(750);
             }
 
             return unsortedNumbers;            
