@@ -83,7 +83,7 @@ namespace SortedNumbers
                 "\t\t\t\t      LISTE 1 bis 100 WIRD DURCHEINANDER GEWIRBELT ^^".Cprint();
 
 
-                for (int j = 0; j < sortedNumbers.Count() - 1; j++)
+                for (int j = 0; j <= sortedNumbers.Count() - 1; j++)
                 {
                     n       = generateRandoms.Next(0, 100);
                     buffer  = sortedNumbers[n];
@@ -106,7 +106,7 @@ namespace SortedNumbers
                     }                    
                 }
 
-                sortedNumbers[sortedNumbers.Count() - 1].CintPrint();
+                //sortedNumbers[sortedNumbers.Count() - 1].CintPrint();
                 Thread.Sleep(500);
             }
 
