@@ -22,7 +22,7 @@ namespace SortedNumbers
         public static void CintPrint(this int x)                 // Extended Method to print any Integer to console and even calculate and print Numbers
         {
                                                                 // Example: (15+56-17).CintPrint() ... outputs the calculation result in the console.
-            Console.Write(x);
+            Console.Write("{0,7}", x);
         }
     }
 }

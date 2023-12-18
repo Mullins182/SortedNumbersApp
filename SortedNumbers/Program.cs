@@ -20,7 +20,7 @@
 
                 OrderNumbers.unsortList();
 
-                Thread.Sleep(15000);
+                Thread.Sleep(6000);
                 Console.Clear();
 
                 OrderNumbers.sortList();

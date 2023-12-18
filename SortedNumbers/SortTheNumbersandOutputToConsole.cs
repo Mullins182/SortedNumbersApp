@@ -8,12 +8,12 @@ namespace SortedNumbers
 {
     internal class SortTheNumbersandOutputToConsole
     {
-        public List<int> unsortedNumbers = new List<int>()
-        {   505,  888,  203,  744,  216,  449,  197,  500,  284,  548,  159,  845,  159,  949,  691,  981,  324,  563,  854,  468,  117,  465,  502,  413,  232,
-            645,  848,  646,  549,  765,  225,  437,  681,  2,  44,  362,  845,  895,  627,  43,  708,  883,  950,  268,  814,  747,  689,  568,  504,  234,  781,
-            780,  574,  759,  937,  95,  761,  934,  936,  523,  459,  55,  698,  551,  111,  649,  499,  879,  77,  446,  89,  503,  917,  1,  988,  435,  689,
-            797,  950,  885,  501,  706,  84,  771,  782,  380,  916,  484,  525,  135,  495,  265,  428,  389,  662,  411,  876,  604, 650, 915
-        };
+        //public List<int> unsortedNumbers = new List<int>()
+        //{   505,  888,  203,  744,  216,  449,  197,  500,  284,  548,  159,  845,  159,  949,  691,  981,  324,  563,  854,  468,  117,  465,  502,  413,  232,
+        //    645,  848,  646,  549,  765,  225,  437,  681,  2,  44,  362,  845,  895,  627,  43,  708,  883,  950,  268,  814,  747,  689,  568,  504,  234,  781,
+        //    780,  574,  759,  937,  95,  761,  934,  936,  523,  459,  55,  698,  551,  111,  649,  499,  879,  77,  446,  89,  503,  917,  1,  988,  435,  689,
+        //    797,  950,  885,  501,  706,  84,  771,  782,  380,  916,  484,  525,  135,  495,  265,  428,  389,  662,  411,  876,  604, 650, 915
+        //};
 
         public List<int> sortedNumbers = new List<int>()
         {   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40,
@@ -49,19 +49,21 @@ namespace SortedNumbers
                     {
                         Console.WriteLine();
                         Console.Write("\t\t\t");
+                        //Console.Write($"{i:5}");
                         sortedNumbers[i].CintPrint();
-                        "\t".CprintWrite();
+                        //"\t".CprintWrite();
                     }
                     else
                     {
+                        //Console.Write("{i:5}");
                         sortedNumbers[i].CintPrint();
-                        "\t".CprintWrite();
+                        //"\t".CprintWrite();
                     }
                 }
 
                 sortedNumbers[sortedNumbers.Count()-1].CintPrint();
 
-                Thread.Sleep(500);
+                Thread.Sleep(250);
             }
 
             return sortedNumbers;            
@@ -97,17 +99,17 @@ namespace SortedNumbers
                         Console.WriteLine();
                         Console.Write("\t\t\t");
                         sortedNumbers[j].CintPrint();
-                        "\t".CprintWrite();
+                        //"\t".CprintWrite();
                     }
                     else
                     {
                         sortedNumbers[j].CintPrint();
-                        "\t".CprintWrite();
+                        //"\t".CprintWrite();
                     }                    
                 }
 
                 //sortedNumbers[sortedNumbers.Count() - 1].CintPrint();
-                Thread.Sleep(500);
+                Thread.Sleep(5);
             }
 
             return sortedNumbers;
